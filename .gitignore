@@ -1,0 +1,44 @@
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- C++ / Build System ---
+# Ignora la carpeta de compilación completa
+build/
+bin/
+obj/
+# Archivos específicos de CMake
+CMakeUserPresets.json
+CMakeFiles/
+CMakeCache.txt
+
+# --- Visual Studio / MSVC ---
+# Archivos temporales de compilación y bases de datos de IntelliSense
+.vs/
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# --- CUDA ---
+# Archivos generados por el compilador NVCC
+*.device-obj
+*.fatbin
+*.dlink
+
+# --- Resultados del Benchmark ---
+# Ignora las gráficas generadas para mantener el repo limpio
+benchmark_results.png
+benchmark_results_final.png
+
+# --- OS / IDE ---
+.DS_Store
+.vscode/ipch/
+.vscode/msvc.json
